@@ -5,7 +5,7 @@ Group 8
 1. Neha Kanakamedala @nk56399
 2. Mason Lee @
 3. Vivienne Lin @
-4. Daniel Mok @
+4. Daniel Mok @dlm90284-ai
 # Scenario Description:
 Our group is building a database for a Bookstore Management System designed to help manage the sale and inventory of books while maintaining records of customers, employees, and publishers. The system tracks detailed information about each book, including its author, publisher, and quantity, and allows customers to place and pay for orders. Each customer can purchase multiple books in a single orde. The system also records book reviews submitted by customers, providing insights into the books and customer satisfaction. Employees are stored in the database with their job titles and manager relationships. Publishers and authors are linked to the books they produce, supporting reporting on sales performance by publisher or author. This database demonstrates how a relational database can efficiently organize and connect business operations in a retail bookstore, ensuring accurate tracking of inventory, sales, payments, and customer feedback.
 # Data Model
