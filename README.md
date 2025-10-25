@@ -60,6 +60,47 @@ The database does not support supplier or shipping information. There is no stor
 <img width="1502" height="434" alt="image" src="https://github.com/user-attachments/assets/62fd6993-b5ad-48d4-b9a4-8a93e9a74e38" />
 
 # Queries:
+1) Most Borrowed Actors
+Question: Which authors were borrowed the most total units?
+Managerial Justification: Helps identify high demand authors for acquisition and promotion.
 
+2) Customers With Orders but No Payments
+Question: Which customers placed orders but have not made any payments?
+Managerial Justification: Allows managers to monitor unpaid orders and follow up for overdue
+payments.
+
+3) Books Priced Below Average Payment
+Question: Which books are priced below the overall average payment amount and have been
+borrowed at least once?
+Managerial Justification: Helps managers identify affordable titles with active circulation.
+
+4) Low Inventory Alert
+Question: Which books have fewer than five copies available?
+Managerial Justification: Enables proactive restocking of popular or low stock titles.
+
+5) Monthly Payment Totals
+Question: What is the total payment amount collected each month?
+Managerial Justification: Tracks monthly revenue trends to support financial planning.
+
+6) Loyal Customers
+Question: Which customers have placed at least five orders and how much have they paid in
+total?
+Managerial Justification: Helps identify loyal patrons for rewards or membership incentives.
+
+7) Manager and Staff Counts
+Question: How many direct reports does each manager have?
+Managerial Justification: Assists in workload balancing and team size analysis.
+
+8) Top Rated Books
+Question: Which books have an average rating above 4.5 and at least ten reviews?
+Managerial Justification: Identifies high quality titles worth recommending or featuring.
+
+9) Inactive Customers
+Question: Which customers have never placed an order?
+Managerial Justification: Supports targeted outreach campaigns to encourage engagement.
+
+10)  Most Borrowed Publishers
+Question: Which publishers have the most borrowed books overall?
+Managerial Justification: Helps evaluate publisher performance and negotiate partnerships.
 
 
