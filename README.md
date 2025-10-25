@@ -60,47 +60,96 @@ The database does not support supplier or shipping information. There is no stor
 <img width="1502" height="434" alt="image" src="https://github.com/user-attachments/assets/62fd6993-b5ad-48d4-b9a4-8a93e9a74e38" />
 
 # Queries:
-1) Most Borrowed Actors
+1. Most Borrowed Actors
+   
 Question: Which authors were borrowed the most total units?
+
+Query 1 allows managers to see which authors’ books have been borrowed or purchased the most overall. By calculating the total number of units sold for each author, managers can identify which authors are in the highest demand among customers. These insights help determine which authors’ books should be prioritized. Listing the results in descending order of total borrowed units makes it easy to see which authors generate the most interest and should receive the most attention.
+
 Managerial Justification: Helps identify high demand authors for acquisition and promotion.
 
-2) Customers With Orders but No Payments
+2. Customers With Orders but No Payments
+   
 Question: Which customers placed orders but have not made any payments?
+
+Query 2 allows managers to identify customers who have placed orders but have not yet made any payments. By comparing the Order and Payment tables, the query finds all customers linked to existing orders that do not appear in the payment records. Listing the results by last and first name makes it easy for staff to locate and contact the appropriate customers for resolution.
+
 Managerial Justification: Allows managers to monitor unpaid orders and follow up for overdue
 payments.
 
-3) Books Priced Below Average Payment
+
+3. Books Priced Below Average Payment
+   
 Question: Which books are priced below the overall average payment amount and have been
 borrowed at least once?
+
+Query 3 allows managers to identify books that are priced below the average payment amount but have still been borrowed or purchased at least once. By comparing each book’s price to the overall average payment, the query highlights titles that are both affordable and actively circulating. This helps managers recognize books that perform well, supporting decisions about pricing strategies, promotions, and restocking. Listing the results by book title makes it easy to review and select titles.
+
 Managerial Justification: Helps managers identify affordable titles with active circulation.
 
-4) Low Inventory Alert
+4. Low Inventory Alert
+   
 Question: Which books have fewer than five copies available?
+
+Query 4 allows managers to identify books with fewer than five copies remaining in inventory, signaling titles that may soon go out of stock. By joining the Book and Inventory tables, the query retrieves each book’s title, ISBN, and current stock level to provide a clear view of low inventory items. This helps managers take action by ordering additional copies of popular or essential books before they run out. Listing the results in ascending order of stock quantity and then by book title makes it easy to prioritize restocking efforts efficiently.
+
 Managerial Justification: Enables proactive restocking of popular or low stock titles.
 
-5) Monthly Payment Totals
+5. Monthly Payment Totals
+    
 Question: What is the total payment amount collected each month?
+
+Query 5 allows managers to view the total payment amounts collected each month, providing a picture of monthly revenue trends. By grouping payment data by month and summing the total amounts, the query helps identify patterns in sales performance over time. This information supports managers to make informed decisions about marketing, staffing, and inventory based on periods of high or low revenue. Listing the results in chronological order allows for easy tracking.
+
 Managerial Justification: Tracks monthly revenue trends to support financial planning.
 
-6) Loyal Customers
+6. Loyal Customers
+    
 Question: Which customers have placed at least five orders and how much have they paid in
 total?
+
+Query 6 allows managers to identify loyal customers who have placed five or more orders and to see the total amount each has paid. By joining the Customer, Order, and Payment tables, the query calculates both the number of distinct orders per customer and their total spending. This helps managers recognize people who contribute significantly to sales. Sorting by total amount paid and number of orders highlights the most valuable customers first for targeted engagement.
+
 Managerial Justification: Helps identify loyal patrons for rewards or membership incentives.
 
-7) Manager and Staff Counts
+7. Manager and Staff Counts
+    
 Question: How many direct reports does each manager have?
+
+Query 7 allows managers to see how many employees directly report to each manager. By performing a self-join on the Employee table, the query links each manager to their direct reports and counts how many staff members fall under their supervision. This information helps with balancing, planning, and performance evaluations, ensuring that management responsibilities are distributed effectively. Sorting the results by the number of direct reports highlights managers overseeing the largest teams, allowing leadership to assess the teams.
+
 Managerial Justification: Assists in workload balancing and team size analysis.
 
-8) Top Rated Books
+8. Top Rated Books
+    
 Question: Which books have an average rating above 4.5 and at least ten reviews?
+
+Query 8 allows managers to identify top-rated books that have received an average rating above 4.5 and at least ten reviews. This helps managers pinpoint high-quality, well-reviewed books that are popular among customers. Such insights can be used to promote these titles, feature them in marketing campaigns, or prioritize them for restocking. Sorting the results by highest average rating and review count ensures the most positively reviewed books appear first for easy recognition.
+
 Managerial Justification: Identifies high quality titles worth recommending or featuring.
 
-9) Inactive Customers
+9. Inactive Customers
+    
 Question: Which customers have never placed an order?
+
+Query 9 allows managers to identify customers who have never placed an order, helping pinpoint inactive users. By checking for customers that do not appear in the Order table, the query isolates those who have registered but have not made any purchases. This information supports targeted marketing aimed at encouraging these customers to place their first order through discounts, recommendations, or promotional emails. Sorting the results alphabetically by last and first name makes it easy for staff to review and contact potential customers for engagement efforts.
+
 Managerial Justification: Supports targeted outreach campaigns to encourage engagement.
 
-10)  Most Borrowed Publishers
+10.  Most Borrowed Publishers
+    
 Question: Which publishers have the most borrowed books overall?
+
+Query 10 allows managers to determine which publishers’ books have been borrowed or sold the most overall by summing the total quantities of books associated with each publisher. By joining the Publisher, Book, and Order_Item tables, the query connects each publisher to the books they produce, and the number of units borrowed. The insights support decisions related to performance reviews, purchasing agreements, and partnership negotiations. Sorting results in descending order of total borrowed units ensures that the most successful publishers are highlighted first for strategic focus.
+
 Managerial Justification: Helps evaluate publisher performance and negotiate partnerships.
+
+# Database Information:
+
+<img width="760" height="393" alt="image" src="https://github.com/user-attachments/assets/873930eb-ddd5-4252-ac02-f5a5293a7ca7" />
+
+
+
+
 
 
