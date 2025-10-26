@@ -3,7 +3,7 @@
 Group 8
 # Team Members:
 1. Neha Kanakamedala @nk56399
-2. Mason Lee @
+2. Mason Lee @mlee1921
 3. Vivienne Lin @
 4. Daniel Mok @dlm90284-ai
 # Scenario Description:
