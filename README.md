@@ -48,15 +48,15 @@ The database does not support supplier or shipping information. There is no stor
 <img width="1712" height="1344" alt="image" src="https://github.com/user-attachments/assets/6e58c975-a0f0-47d3-98e0-bb812e414407" />
 
 # Data Dictionary:
-<img width="1492" height="484" alt="image" src="https://github.com/user-attachments/assets/1ee0cd4c-9706-4812-bf36-b7faf10e52e5" />
+<img width="1476" height="516" alt="image" src="https://github.com/user-attachments/assets/1c381f84-df11-46cc-b943-78e90dbbbd53" />
 <img width="1462" height="400" alt="image" src="https://github.com/user-attachments/assets/89e6ce0c-3a25-4139-a340-072a494da54d" />
 <img width="1490" height="432" alt="image" src="https://github.com/user-attachments/assets/453bf3a2-64e9-4340-9daa-4ee3a02bcc24" />
-<img width="1488" height="384" alt="image" src="https://github.com/user-attachments/assets/81c33c4e-9442-4b1a-a649-93bfb3e02b3f" />
+<img width="1464" height="336" alt="image" src="https://github.com/user-attachments/assets/e8acc703-f013-4b4a-9e5f-1b65a9dd2668" />
 <img width="1482" height="478" alt="image" src="https://github.com/user-attachments/assets/862c2277-2bdf-4eeb-97c6-c8315542a188" />
 <img width="1480" height="550" alt="image" src="https://github.com/user-attachments/assets/c09e4e9c-a8bc-4d3d-bd0c-80a4e0b8c9eb" />
-<img width="1498" height="572" alt="image" src="https://github.com/user-attachments/assets/f72b8b32-6cf4-4c4d-99d2-30a9d0ab32ad" />
+<img width="1500" height="608" alt="image" src="https://github.com/user-attachments/assets/3466447d-b774-4b34-9fc5-5ee4495f00d5" />
 <img width="1506" height="606" alt="image" src="https://github.com/user-attachments/assets/fead99ff-067e-498e-9924-76c644b39670" />
-<img width="1478" height="518" alt="image" src="https://github.com/user-attachments/assets/bb0d2b2f-0f16-4581-99fc-a224c65ed4d7" />
+<img width="1488" height="604" alt="image" src="https://github.com/user-attachments/assets/f225f7f1-ed4a-4aad-bbe0-a25ca5d1bdb6" />
 <img width="1502" height="434" alt="image" src="https://github.com/user-attachments/assets/62fd6993-b5ad-48d4-b9a4-8a93e9a74e38" />
 
 # Queries:
@@ -87,13 +87,13 @@ Query 3 allows managers to identify books that are priced below the average paym
 
 Managerial Justification: Helps managers identify affordable titles with active circulation.
 
-4. Low Inventory Alert
+4. Books
    
-Question: Which books have fewer than five copies available?
+Which books contain the word “Fiction” in their titles and who wrote them?
 
-Query 4 allows managers to identify books with fewer than five copies remaining in inventory, signaling titles that may soon go out of stock. By joining the Book and Inventory tables, the query retrieves each book’s title, ISBN, and current stock level to provide a clear view of low inventory items. This helps managers take action by ordering additional copies of popular or essential books before they run out. Listing the results in ascending order of stock quantity and then by book title makes it easy to prioritize restocking efforts efficiently.
+Query 4 identifies all books that contain the word Fiction in their titles along with the authors who wrote them. By joining the Book and Author tables, it connects each title to its corresponding author. The use of the REGEXP function allows flexible pattern matching to find any title that includes the word “Fiction,” regardless of position in the text. The results are sorted alphabetically by book title. This query helps managers track fiction titles and evaluate the fiction genre within the library’s collection.
 
-Managerial Justification: Enables proactive restocking of popular or low stock titles.
+Managerial Justification: Helps managers track fiction titles and analyze genre popularity among readers
 
 5. Monthly Payment Totals
     
@@ -146,7 +146,8 @@ Managerial Justification: Helps evaluate publisher performance and negotiate par
 
 # Database Information:
 
-<img width="760" height="393" alt="image" src="https://github.com/user-attachments/assets/873930eb-ddd5-4252-ac02-f5a5293a7ca7" />
+<img width="760" height="393" alt="image" src="https://github.com/user-attachments/assets/2c030a05-3095-4c1d-a5f9-f1b53b565429" />
+
 
 
 
