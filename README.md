@@ -87,21 +87,20 @@ Query 3 allows managers to identify books that are priced below the average paym
 
 Managerial Justification: Helps managers identify affordable titles with active circulation.
 
-4. Books
-   
+4. Low Inventory Alert
+Question: Which books have fewer than five copies available?
+
+Query 4 allows managers to identify books with fewer than five copies remaining in inventory, signaling titles that may soon go out of stock. By joining the Book and Inventory tables, the query retrieves each book’s title, ISBN, and current stock level to provide a clear view of low inventory items. This helps managers take action by ordering additional copies of popular or essential books before they run out. Listing the results in ascending order of stock quantity and then by book title makes it easy to prioritize restocking efforts efficiently.
+
+Managerial Justification: Enables proactive restocking of popular or low stock titles.
+
+5. Books
+    
 Which books contain the word “Fiction” in their titles and who wrote them?
 
-Query 4 identifies all books that contain the word Fiction in their titles along with the authors who wrote them. By joining the Book and Author tables, it connects each title to its corresponding author. The use of the REGEXP function allows flexible pattern matching to find any title that includes the word “Fiction,” regardless of position in the text. The results are sorted alphabetically by book title. This query helps managers track fiction titles and evaluate the fiction genre within the library’s collection.
+Query 5 identifies all books that contain the word "Fiction" in their titles along with the authors who wrote them. By joining the Book and Author tables, it connects each title to its corresponding author. The use of the REGEXP function allows flexible pattern matching to find any title that includes the word “Fiction,” regardless of position in the text. The results are sorted alphabetically by book title. This query helps managers track fiction titles and evaluate the fiction genre within the library’s collection.
 
 Managerial Justification: Helps managers track fiction titles and analyze genre popularity among readers
-
-5. Monthly Payment Totals
-    
-Question: What is the total payment amount collected each month?
-
-Query 5 allows managers to view the total payment amounts collected each month, providing a picture of monthly revenue trends. By grouping payment data by month and summing the total amounts, the query helps identify patterns in sales performance over time. This information supports managers to make informed decisions about marketing, staffing, and inventory based on periods of high or low revenue. Listing the results in chronological  allows for easy tracking.
-
-Managerial Justification: Tracks monthly revenue trends to support financial planning.
 
 6. Loyal Customers
     
