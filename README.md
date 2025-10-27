@@ -60,7 +60,7 @@ The database does not support supplier or shipping information. There is no stor
 <img width="1502" height="434" alt="image" src="https://github.com/user-attachments/assets/62fd6993-b5ad-48d4-b9a4-8a93e9a74e38" />
 
 # Queries:
-1. Most Borrowed Actors
+1. Most Borrowed Authors
    
 Question: Which authors were borrowed the most total units?
 
