@@ -93,6 +93,7 @@ Query 3 allows managers to identify books that are priced below the average paym
 Managerial Justification: Helps managers identify affordable titles with active circulation.
 
 4. Low Inventory Alert
+   
 Question: Which books have fewer than five copies available?
 
 <img width="654" height="436" alt="image" src="https://github.com/user-attachments/assets/69298acb-e46a-4a4c-bc08-864e5f88d45e" />
@@ -103,7 +104,7 @@ Managerial Justification: Enables proactive restocking of popular or low stock t
 
 5. Books
     
-Which books contain the word “Fiction” in their titles and who wrote them?
+Question:Which books contain the word “Fiction” in their titles and who wrote them?
 
 <img width="894" height="528" alt="image" src="https://github.com/user-attachments/assets/3c555a92-b363-4586-a5ab-7f20d2e2addc" />
 
