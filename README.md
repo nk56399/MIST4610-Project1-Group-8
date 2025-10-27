@@ -26,14 +26,14 @@ The Inventory entity tracks the quantity of each book are available. It connects
 Customer:
 The Customer entity stores the customer’s name, email, phone number, and age. Customers interact with the system by placing orders and writing reviews.
 
-Order:
-The Order entity records each purchase made by a customer, including the order date and total amount. A customer can place many orders, forming a one-to-many relationship between Customer and Order.
+Orders:
+The Orders entity records each purchase made by a customer, including the order date and total amount. A customer can place many orders, forming a one-to-many relationship between Customer and Orders.
 
 Order_Item:
 Because each order can include multiple books, and each book can appear in many orders, the Order_Item entity serves as an associative entity between Order and Book. It includes attributes such as quantity and price paid.
 
 Payment:
-The Payment entity tracks payments associated with customer orders. Its attributes include payment amount and payment date. Each payment is linked to one order, forming a one-to-one relationship between Order and Payment.
+The Payment entity tracks payments associated with customer orders. Its attributes include payment amount and payment date. Each payment is linked to one order, forming a one-to-one relationship between Orders and Payment.
 
 Review:
 The Review entity allows customers to leave feedback on books they’ve purchased. Each review links a Customer and a Book, representing a many-to-many relationship formed through this entity. Attributes include the rating, text, and date.
@@ -45,7 +45,7 @@ This database supports the storage and management of books, their authors, publi
 
 The database does not support supplier or shipping information. There is no store location or branch management because only one store is implied. There is no book categorization like genre or keywords. Also, if a customer wants to refund their book there is no return or refund tracking.
  
-<img width="1712" height="1344" alt="image" src="https://github.com/user-attachments/assets/6e58c975-a0f0-47d3-98e0-bb812e414407" />
+<img width="1118" height="934" alt="image" src="https://github.com/user-attachments/assets/e9e46bd6-a78e-483f-b6df-39b2f29ecb39" />
 
 # Data Dictionary:
 <img width="1476" height="516" alt="image" src="https://github.com/user-attachments/assets/1c381f84-df11-46cc-b943-78e90dbbbd53" />
@@ -72,9 +72,9 @@ Managerial Justification: Helps identify high demand authors for acquisition and
    
 Question: Which customers placed orders but have not made any payments?
 
-Query 2 allows managers to identify customers who have placed orders but have not yet made any payments. By comparing the Order and Payment tables, the query finds all customers linked to existing orders that do not appear in the payment records. Listing the results by last and first name makes it easy for staff to locate and contact the appropriate customers for resolution.
+Query 2 allows managers to identify customers who have placed orders but have not yet made any payments. By comparing the Orders and Payment tables, the query finds all customers linked to existing s that do not appear in the payment records. Listing the results by last and first name makes it easy for staff to locate and contact the appropriate customers for resolution.
 
-Managerial Justification: Allows managers to monitor unpaid orders and follow up for overdue
+Managerial Justification: Allows managers to monitor unpaid s and follow up for overdue
 payments.
 
 
@@ -99,16 +99,16 @@ Managerial Justification: Helps managers track fiction titles and analyze genre 
     
 Question: What is the total payment amount collected each month?
 
-Query 5 allows managers to view the total payment amounts collected each month, providing a picture of monthly revenue trends. By grouping payment data by month and summing the total amounts, the query helps identify patterns in sales performance over time. This information supports managers to make informed decisions about marketing, staffing, and inventory based on periods of high or low revenue. Listing the results in chronological order allows for easy tracking.
+Query 5 allows managers to view the total payment amounts collected each month, providing a picture of monthly revenue trends. By grouping payment data by month and summing the total amounts, the query helps identify patterns in sales performance over time. This information supports managers to make informed decisions about marketing, staffing, and inventory based on periods of high or low revenue. Listing the results in chronological  allows for easy tracking.
 
 Managerial Justification: Tracks monthly revenue trends to support financial planning.
 
 6. Loyal Customers
     
-Question: Which customers have placed at least five orders and how much have they paid in
+Question: Which customers have placed at least five s and how much have they paid in
 total?
 
-Query 6 allows managers to identify loyal customers who have placed five or more orders and to see the total amount each has paid. By joining the Customer, Order, and Payment tables, the query calculates both the number of distinct orders per customer and their total spending. This helps managers recognize people who contribute significantly to sales. Sorting by total amount paid and number of orders highlights the most valuable customers first for targeted engagement.
+Query 6 allows managers to identify loyal customers who have placed five or more s and to see the total amount each has paid. By joining the Customer, , and Payment tables, the query calculates both the number of distinct orders per customer and their total spending. This helps managers recognize people who contribute significantly to sales. Sorting by total amount paid and number of orders highlights the most valuable customers first for targeted engagement.
 
 Managerial Justification: Helps identify loyal patrons for rewards or membership incentives.
 
@@ -132,7 +132,7 @@ Managerial Justification: Identifies high quality titles worth recommending or f
     
 Question: Which customers have never placed an order?
 
-Query 9 allows managers to identify customers who have never placed an order, helping pinpoint inactive users. By checking for customers that do not appear in the Order table, the query isolates those who have registered but have not made any purchases. This information supports targeted marketing aimed at encouraging these customers to place their first order through discounts, recommendations, or promotional emails. Sorting the results alphabetically by last and first name makes it easy for staff to review and contact potential customers for engagement efforts.
+Query 9 allows managers to identify customers who have never placed an order, helping pinpoint inactive users. By checking for customers that do not appear in the Orders table, the query isolates those who have registered but have not made any purchases. This information supports targeted marketing aimed at encouraging these customers to place their first order through discounts, recommendations, or promotional emails. Sorting the results alphabetically by last and first name makes it easy for staff to review and contact potential customers for engagement efforts.
 
 Managerial Justification: Supports targeted outreach campaigns to encourage engagement.
 
