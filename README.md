@@ -53,9 +53,9 @@ The database does not support supplier or shipping information. There is no stor
 <img width="1490" height="432" alt="image" src="https://github.com/user-attachments/assets/453bf3a2-64e9-4340-9daa-4ee3a02bcc24" />
 <img width="1464" height="336" alt="image" src="https://github.com/user-attachments/assets/e8acc703-f013-4b4a-9e5f-1b65a9dd2668" />
 <img width="1482" height="478" alt="image" src="https://github.com/user-attachments/assets/862c2277-2bdf-4eeb-97c6-c8315542a188" />
-<img width="1480" height="550" alt="image" src="https://github.com/user-attachments/assets/c09e4e9c-a8bc-4d3d-bd0c-80a4e0b8c9eb" />
-<img width="1500" height="608" alt="image" src="https://github.com/user-attachments/assets/3466447d-b774-4b34-9fc5-5ee4495f00d5" />
-<img width="1506" height="606" alt="image" src="https://github.com/user-attachments/assets/fead99ff-067e-498e-9924-76c644b39670" />
+<img width="1302" height="502" alt="image" src="https://github.com/user-attachments/assets/2cc8a0f9-4255-40c1-bddd-08e5b437e87a" />
+<img width="1312" height="532" alt="image" src="https://github.com/user-attachments/assets/7c288852-57d9-4b7b-b157-80249f7f2a33" />
+<img width="1306" height="538" alt="image" src="https://github.com/user-attachments/assets/19cc90c7-9d3c-4b77-b870-507761b53e3f" />
 <img width="1488" height="604" alt="image" src="https://github.com/user-attachments/assets/f225f7f1-ed4a-4aad-bbe0-a25ca5d1bdb6" />
 <img width="1502" height="434" alt="image" src="https://github.com/user-attachments/assets/62fd6993-b5ad-48d4-b9a4-8a93e9a74e38" />
 
